@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="breadcrumb">
+      <span>New York > New York City > For sale > Clothing & Accessories > Olivia Baker</span>
+    </div>
+
+    <!-- Main Section with Auto Width Container -->
+    <section class="hero">
+      <a href="../Craiglists posting pages/posting_page.html" class="back-link">Back to <span class = "underline">New Balance 9060 Black</span></a>
+        <div class="hero-container">
+            <!-- Avatar Picture with Name and Description -->
+            <div class="avatar">
+              <img src="../Craiglists posting pages/HCI projects/Ellipse 3.png" alt="Profile Picture" class="avatar-img">
+              <h2 class="avatar-name">Olivia Baker</h2>
+              <p class="avatar-description">Craigslist seller since 2017</p>
+              
+              <!-- Message Seller Button -->
+              <button class="message-btn" onclick="toggleMessageForm()">Send Message</button>
+              <div class="message-form" style="display: none;">
+                <textarea placeholder="Write your message..." class="message-input"></textarea>
+                <button class="send-message-btn" onclick="sendMessage()">Send</button>
+                <p class="confirmation-message" style="display: none; color: green;">Message sent!</p>
+              </div>
+            </div>
+
+            <div class="store-info">
+              <div class="info-block">
+                <div class="info-item"><strong>Product:</strong> 30 items</div>
+                <div class="info-item"><strong>Location:</strong> New York, NY</div>
+                <div class="info-item"><strong>Ratings:</strong> 4.8</div>
+                <div class="info-item"><strong>Response Rate:</strong> 95%</div>
+              </div>
+            
+              <!-- Block 2 -->
+              <div class="info-block">
+                <div class="info-item"><strong>Response Rate:</strong> 95%</div>
+                <div class="info-item"><strong>Return Policy:</strong> Returnable within 30 days</div>
+                <div class="info-item"><strong>Member Since:</strong> 2017</div>
+                <div class="info-item"><strong>Item Sold:</strong> 235</div>
+              </div>
+
+              <div class="review">
+                <h3>Overall Ratings:</h3>
+                <div class="rating-container">
+                  <h2 class="rating-value">4.8</h2>
+                  <div class="stars">
+                    <!-- Assuming you're using 5 stars, fill the stars dynamically based on the rating value -->
+                    <span class="star">&#9733;</span> <!-- Filled star -->
+                    <span class="star">&#9733;</span> <!-- Filled star -->
+                    <span class="star">&#9733;</span> <!-- Filled star -->
+                    <span class="star">&#9733;</span> <!-- Filled star -->
+                    <span class="star">&#9734;</span> <!-- Empty star -->
+                  </div>
+                  <p class="reviews-count">234 reviews</p>
+                </div>
+                
+                <div class="customer-review">
+                  <div class="customer-info">
+                    <img src="../Craiglists posting pages/HCI projects/3135715.png" alt="Customer Profile Picture" class="customer-img">
+                    <div class="customer-details">
+                      <p class="customer-name">John Doe</p>
+                      <div class="review-date">2 days ago</div>
+                    </div>
+                  </div>
+              
+                  <div class="customer-rating">
+                    <div class="stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+              
+                  <p class="review-text">"Olivia Baker is a good seller. She responded to me quickly and I got my items within 1 week!"</p>
+                </div>
+                <div class="customer-review">
+                  <div class="customer-info">
+                    <img src="../Craiglists posting pages/HCI projects/hq720 (1).jpg" alt="Customer Profile Picture" class="customer-img">
+                    <div class="customer-details">
+                      <p class="customer-name">Michael Truong</p>
+                      <div class="review-date">15 days ago</div>
+                    </div>
+                  </div>
+              
+                  <div class="customer-rating">
+                    <div class="stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+              
+                  <p class="review-text">"I had a great experience with this seller. Fast shipping and the product was exactly as described. Will definitely buy from them again!"</p>
+                </div>
+            </div>
+            
+            
+          </div> 
+          
+        </div>
+    </section>
+    <!-- Listings Section -->
+    <section class="listings">
+      <h3>All Products:</h3>
+      <div class="listings-grid">
+        <!-- Row 1 -->
+        <div class="listing-item">
+          <img src="../img/Seller-Page/item1.png" alt="Item 1">
+          <p class="item-name">Sneakers</p>
+          <div class="item-info">
+            <span class="item-price">$200.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+        
+        <div class="listing-item">
+          <img src="../img/new balance sneakers.png" alt="Item 2">
+          <p class="item-name">New Balance 9060 Black</p>
+          <div class="item-info">
+            <span class="item-price">$235.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+        <div class="listing-item">
+          <img src="../Craiglists posting pages/HCI projects/sneaker 2.jpg" alt="Item 3">
+          <p class="item-name">Sneakers</p>
+          <div class="item-info">
+            <span class="item-price">$79.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+        <div class="listing-item">
+          <img src="../Craiglists posting pages/HCI projects/sneaker 7.jpg" alt="Item 4">
+          <p class="item-name">Sneakers</p>
+          <div class="item-info">
+            <span class="item-price">$57.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+        <div class="listing-item">
+          <img src="../Craiglists posting pages/HCI projects/sneaker 4.jpg" alt="Item 5">
+          <p class="item-name">Sneakers</p>
+          <div class="item-info">
+            <span class="item-price">$568.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="listing-item">
+          <img src="../Craiglists posting pages/HCI projects/sneaker 5.jpg" alt="Item 1">
+          <p class="item-name">Sneakers</p>
+          <div class="item-info">
+            <span class="item-price">$90.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+        
+        <div class="listing-item">
+          <img src="../Craiglists posting pages/HCI projects/sneaker 6.jpg" alt="Item 2">
+          <p class="item-name">Sneakers</p>
+          <div class="item-info">
+            <span class="item-price">$257.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+        <div class="listing-item">
+          <img src="../Craiglists posting pages/HCI projects/sneaker 7.jpg" alt="Item 3">
+          <p class="item-name">Sneakers</p>
+          <div class="item-info">
+            <span class="item-price">$628.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+        <div class="listing-item">
+          <img src="../Craiglists posting pages/HCI projects/sneaker 8.jpg" alt="Item 4">
+          <p class="item-name">Sneakers</p>
+          <div class="item-info">
+            <span class="item-price">$299.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+        <div class="listing-item">
+          <img src="../Craiglists posting pages/HCI projects/sneaker 9.jpg" alt="Item 5">
+          <p class="item-name">Sneakers</p>
+          <div class="item-info">
+            <span class="item-price">$199.00</span>
+            <span class="item-meta">New York, NY</span>
+          </div>
+        </div>
+      </section>
+      <script src="message.js"></script>
+</body>
+<footer class="pagination-footer">
+  
+</footer>
+
+</html>
